@@ -1,0 +1,13 @@
+delay().then((response) => {
+  window.alert(response);
+}, (err) => {
+  console.log(err);
+});
+
+function delay(){
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('success');
+  }, 2000)
+  })
+} 
